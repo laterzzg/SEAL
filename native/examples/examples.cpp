@@ -33,11 +33,13 @@ int main()
         MemoryManager class can be used to change it. Most users should have
         little or no reason to touch the memory allocation system.
         */
+		//Ìí¼ÓzzgËµÃ÷
         size_t megabytes = MemoryManager::GetPool().alloc_byte_count() >> 20;
         cout << "[" << setw(7) << right << megabytes << " MB] "
              << "Total allocation from the memory pool" << endl;
 
         int selection = 0;
+
         bool invalid = true;
         do
         {
